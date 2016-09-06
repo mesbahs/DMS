@@ -1,0 +1,897 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24"
+     xml:base="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24"
+     xmlns:software="http://ontosoft.org/software#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24">
+        <owl:imports rdf:resource="http://purl.org/spar/cito/"/>
+        <owl:imports rdf:resource="http://purl.org/spar/deo"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+        <owl:imports rdf:resource="http://ontosoft.org/software"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/wot/0.1/assurance"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontosoft.org/software#hasDependency -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasDependency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasInput -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasInputParameter -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasInputParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasLicense -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasLicense">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasMajorContributor -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasMajorContributor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasOutput -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#hasSoftwareVersion -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#hasSoftwareVersion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontosoft.org/software#supportsOperatingSystem -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/software#supportsOperatingSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/cito/extends -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/cito/extends">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/cito/providesMethodFor -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/cito/providesMethodFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/cito/usesMethodIn -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/cito/usesMethodIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#comparedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#comparedWith">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/deo/Methods"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#consistsOfAttributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#consistsOfAttributes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#containsNumeric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#containsNumeric">
+        <rdfs:domain rdf:resource="http://ontosoft.org/software#NumericEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#containsText -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#containsText">
+        <rdfs:range rdf:resource="http://ontosoft.org/software#TextEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#describedInPublication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#describedInPublication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#describedSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#describedSoftware">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#fromUniversity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#fromUniversity">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasAcceptedRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasAcceptedRange">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#acceptedRange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasAttributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasAttributes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasConfidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasConfidence">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFigure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFigure">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#figure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasForeignKey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasForeignKey">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#foreignKey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFormula -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFormula">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#formula"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasInputDataSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasInputDataSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasInputVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasInputVariable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasNextStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasNextStep">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasPreviousStep"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasParameter">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasPreviousStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasPreviousStep">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasPrimaryKey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasPrimaryKey">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#primaryKey"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasResearchQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasResearchQuestion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#researchQuestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStatistics -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStatistics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#DescriptiveStatistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStep -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStep">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasTable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasTable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#table"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasTimeInterval -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasTimeInterval">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#introducedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#introducedIn">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isOutputOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isOutputOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isSubGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isSubGoalOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isSubResearchQuestionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isSubResearchQuestionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#researchQuestion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#researchQuestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isUsedInSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isUsedInSoftware">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#producesVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#producesVariable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#publishedPapers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#publishedPapers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#satisfies">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#useJointlyWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#useJointlyWith">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/deo/Methods"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedAttribute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#DescriptiveStatistics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#DescriptiveStatistics"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedDatasource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedDatasource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedInPublication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedInPublication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/deo/Methods"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#usedSoftware">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/publications -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/publications">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidenceValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidenceValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidence"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#evaluationMetric -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#evaluationMetric">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidence"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasCaption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasCaption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasDomain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasDomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasEmail">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasEndRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasEndRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#acceptedRange"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasFormat">
+        <rdfs:domain rdf:resource="http://ontosoft.org/software#FileIO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasNumberOfRecords -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasNumberOfRecords">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasSize">
+        <rdfs:domain rdf:resource="http://ontosoft.org/software#FileIO"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStartRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasStartRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#acceptedRange"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasVersionReleaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#hasVersionReleaseDate">
+        <rdfs:domain rdf:resource="http://ontosoft.org/software#SoftwareVersion"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isNullable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#isNullable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#lastModifiedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#lastModifiedDate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontosoft.org/softwareCategories#MetadataCategory -->
+
+    <rdf:Description rdf:about="http://ontosoft.org/softwareCategories#MetadataCategory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/spar/deo/Methods -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/deo/Methods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#dataAnalysis"/>
+        <dc:title></dc:title>
+        <terms:description></terms:description>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:creator rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <dc:description></dc:description>
+        <dc:rights></dc:rights>
+        <dc:title></dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#DescriptiveStatistics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#DescriptiveStatistics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <dc:title></dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetaDataCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetaDataCategory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetadataCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetadataCategory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Datasource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Paper">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:creator rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <dc:date></dc:date>
+        <dc:publisher></dc:publisher>
+        <dc:title></dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#Softwares">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#University">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <dc:description></dc:description>
+        <dc:title></dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#acceptedRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#acceptedRange">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <terms:description></terms:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties"/>
+        <dc:date></dc:date>
+        <dc:title></dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#confidence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#dataAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#dataAnalysis">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#figure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#figure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#foreignKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#foreignKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#formula -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#formula">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#objective">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#parameter">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#primaryKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#primaryKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#researchQuestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#researchQuestion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#schemaProperties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetadataCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#statisticalProperties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#statisticalProperties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#MetadataCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#step">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#table">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sepidehmesbah/ontologies/2016/6/untitled-ontology-24#variable">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
