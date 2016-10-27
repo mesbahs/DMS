@@ -1,0 +1,227 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix software: <http://ontosoft.org/software#> .
+@base <https://github.com/mesbahs/DMS/blob/master/dms.owl> .
+
+<https://github.com/mesbahs/DMS/blob/master/dms.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith
+:comparedWith rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#describedIn
+:describedIn rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment
+:describesExperiment rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#describesSoftware
+:describesSoftware rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange
+:hasAcceptedRange rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasApplication
+:hasApplication rdf:type owl:ObjectProperty ;
+                rdfs:range :Application .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasConfiguration
+:hasConfiguration rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasFigure
+:hasFigure rdf:type owl:ObjectProperty ;
+           rdfs:range <http://purl.org/spar/doco/Figure> .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasImplementation
+:hasImplementation rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isImplementationOf .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective
+:hasObjective rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter
+:hasParameter rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          rdfs:range :Scope .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement
+:hasStatisticsMeasurement rdf:type owl:ObjectProperty ;
+                          rdfs:range <http://rdf-vocabulary.ddialliance.org/discovery#DescriptiveStatistics> .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasTable
+:hasTable rdf:type owl:ObjectProperty ;
+          rdfs:range <http://purl.org/spar/doco/Table> .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage
+:hasUsage rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable
+:hasVariable rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn
+:implementedIn rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf
+:isImplementationOf rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy
+:isSatisfiedBy rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf
+:isSubGoalOf rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf
+:isSubResearchQuestionOf rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#produced
+:produced rdf:type owl:ObjectProperty ;
+          rdfs:range <http://purl.org/spar/deo/Results> .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#publishedPaper
+:publishedPaper rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective
+:referenceObjective rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith
+:useJointlyWith rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#usedDataset
+:usedDataset rdf:type owl:ObjectProperty ;
+             rdfs:range <http://rdf-vocabulary.ddialliance.org/discovery#DataFile> .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#usedMethod
+:usedMethod rdf:type owl:ObjectProperty ;
+            rdfs:range :MethodImplementation .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#usedSoftware
+:usedSoftware rdf:type owl:ObjectProperty ;
+              rdfs:range :SoftwareConfiguration .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#usedVariable
+:usedVariable rdf:type owl:ObjectProperty ;
+              rdfs:range <http://rdf-vocabulary.ddialliance.org/discovery#Variable> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption
+:hasCaption rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasEndRange
+:hasEndRange rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStartRange
+:hasStartRange rdf:type owl:DatatypeProperty .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType
+:measurementType rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#AcceptedRange
+:AcceptedRange rdf:type owl:Class .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf skos:Concept .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Experiment
+:Experiment rdf:type owl:Class .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation
+:MethodImplementation rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/spar/deo/Methods> ,
+                                      prov:Entity .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective
+:Objective rdf:type owl:Class .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter
+:Parameter rdf:type owl:Class .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Publication
+:Publication rdf:type owl:Class ;
+             rdfs:subClassOf prov:Entity .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#ResearchQuestion
+:ResearchQuestion rdf:type owl:Class .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#Scope
+:Scope rdf:type owl:Class ;
+       rdfs:subClassOf skos:Concept .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#SoftwareConfiguration
+:SoftwareConfiguration rdf:type owl:Class ;
+                       rdfs:subClassOf software:Software ,
+                                       prov:Entity .
+
+
+###  https://github.com/mesbahs/DMS/blob/master/dms.owl#University
+:University rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
