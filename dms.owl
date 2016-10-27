@@ -17,13 +17,13 @@
 #################################################################
 #    Object Properties
 #################################################################
-
+###  http://purl.org/spar/cito/isDescribedBy
+<http://purl.org/spar/cito/isDescribedBy> rdf:type owl:ObjectProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/spar/cito/isCitedBy> ;
+                                          rdfs:range :Publication .
+                                          
 ###  https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith
 :comparedWith rdf:type owl:ObjectProperty .
-
-
-###  https://github.com/mesbahs/DMS/blob/master/dms.owl#describedIn
-:describedIn rdf:type owl:ObjectProperty .
 
 
 ###  https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment
@@ -70,18 +70,9 @@
           rdfs:range :Scope .
 
 
-###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement
-:hasStatisticsMeasurement rdf:type owl:ObjectProperty ;
-                          rdfs:range <http://rdf-vocabulary.ddialliance.org/discovery#DescriptiveStatistics> .
-
-
 ###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasTable
 :hasTable rdf:type owl:ObjectProperty ;
           rdfs:range <http://purl.org/spar/doco/Table> .
-
-
-###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage
-:hasUsage rdf:type owl:ObjectProperty .
 
 
 ###  https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable
@@ -96,8 +87,6 @@
 :isImplementationOf rdf:type owl:ObjectProperty .
 
 
-###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy
-:isSatisfiedBy rdf:type owl:ObjectProperty .
 
 
 ###  https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf
