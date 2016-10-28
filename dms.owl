@@ -402,13 +402,17 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective -->
 
-    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective"/>
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective">
+         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter -->
 
-    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter"/>
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
