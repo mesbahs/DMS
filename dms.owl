@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:software="http://ontosoft.org/software#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/cito/cites -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/cites">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+        <owl:inverseOf rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity, either directly and explicitly (as in the reference list of a journal article), indirectly (e.g. by citing a more recent paper by the same group on the same topic), or implicitly (e.g. as in artistic quotations or parodies, or in cases of plagiarism).</rdfs:comment>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/describes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/describes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <owl:inverseOf rdf:resource="http://purl.org/spar/cito/isDescribedBy"/>
+        <dc:description xml:lang="en">Example: Galileo&apos;s book [X] is a dialog among three scientists about Copernicus&apos; eliocentric theory.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/isCitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/isCitedBy">
+        <rdfs:comment xml:lang="en">The cited entity (the subject of the RDF triple) is cited by the citing entity (the object of the triple).</rdfs:comment>
+        <rdfs:label xml:lang="en">is cited by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/isDescribedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Publication"/>
+        <rdfs:comment xml:lang="en">The cited entity is described by the citing entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">is described by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/swan/2.0/discourse-relationships/refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#comparedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#comparedWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#describesExperiment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#describesExperiment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasAcceptedRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasAcceptedRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasApplication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasApplication">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Application"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasConfiguration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasConfiguration">
+        <owl:inverseOf rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasFigure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasFigure">
+        <rdfs:range rdf:resource="http://purl.org/spar/doco/Figure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasImplementation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasImplementation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#isImplementationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasObjective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasScope -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasScope">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasTable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasTable">
+        <rdfs:range rdf:resource="http://purl.org/spar/doco/Table"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasUsage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasUsage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#implementedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#implementedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isImplementationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isImplementationOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isSatisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isSatisfiedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isSubGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isSubGoalOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isSubResearchQuestionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isSubResearchQuestionOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#produced -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#produced">
+        <rdfs:range rdf:resource="http://purl.org/spar/deo/Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#publishedPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#publishedPaper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#referenceObjective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#referenceObjective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#useJointlyWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#useJointlyWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#usedDataset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#usedDataset">
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery#DataFile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#usedMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#usedMethod">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MethodImplementation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#usedSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#usedSoftware">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#SoftwareConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#usedVariable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#usedVariable">
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasCaption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasCaption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasEndRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasEndRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasStartRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasStartRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#measurementType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#measurementType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontosoft.org/software#Software -->
+
+    <owl:Class rdf:about="http://ontosoft.org/software#Software"/>
+    
+
+
+    <!-- http://purl.org/spar/deo/Methods -->
+
+    <owl:Class rdf:about="http://purl.org/spar/deo/Methods"/>
+    
+
+
+    <!-- http://purl.org/spar/deo/Results -->
+
+    <owl:Class rdf:about="http://purl.org/spar/deo/Results"/>
+    
+
+
+    <!-- http://purl.org/spar/doco/Figure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/doco/Figure"/>
+    
+
+
+    <!-- http://purl.org/spar/doco/Table -->
+
+    <owl:Class rdf:about="http://purl.org/spar/doco/Table"/>
+    
+
+
+    <!-- http://rdf-vocabulary.ddialliance.org/discovery#DataFile -->
+
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#DataFile"/>
+    
+
+
+    <!-- http://rdf-vocabulary.ddialliance.org/discovery#Variable -->
+
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#Variable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#AcceptedRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#AcceptedRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Application">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Experiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Experiment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#MethodImplementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#MethodImplementation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Objective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Objective"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ResearchQuestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ResearchQuestion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Scope">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#SoftwareConfiguration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#SoftwareConfiguration">
+        <rdfs:subClassOf rdf:resource="http://ontosoft.org/software#Software"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
