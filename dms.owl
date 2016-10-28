@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/mesbahs/DMS/blob/master/dms.owl#"
+     xml:base="https://github.com/mesbahs/DMS/blob/master/dms.owl"
+     xmlns:software="http://ontosoft.org/software#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/spar/cito/cites -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/cites">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+        <owl:inverseOf rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
+        <rdfs:comment xml:lang="en">The citing entity cites the cited entity, either directly and explicitly (as in the reference list of a journal article), indirectly (e.g. by citing a more recent paper by the same group on the same topic), or implicitly (e.g. as in artistic quotations or parodies, or in cases of plagiarism).</rdfs:comment>
+        <rdfs:label xml:lang="en">cites</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/describes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/describes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <owl:inverseOf rdf:resource="http://purl.org/spar/cito/isDescribedBy"/>
+        <dc:description xml:lang="en">Example: Galileo&apos;s book [X] is a dialog among three scientists about Copernicus&apos; eliocentric theory.</dc:description>
+        <rdfs:comment xml:lang="en">The citing entity describes the cited entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/isCitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/isCitedBy">
+        <rdfs:comment xml:lang="en">The cited entity (the subject of the RDF triple) is cited by the citing entity (the object of the triple).</rdfs:comment>
+        <rdfs:label xml:lang="en">is cited by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/spar/cito/isDescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/spar/cito/isDescribedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
+        <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#Publication"/>
+        <rdfs:comment xml:lang="en">The cited entity is described by the citing entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">is described by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/swan/2.0/discourse-relationships/refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasApplication -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasApplication">
+        <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#Application"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasConfiguration -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasConfiguration">
+        <owl:inverseOf rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasFigure -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasFigure">
+        <rdfs:range rdf:resource="http://purl.org/spar/doco/Figure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasImplementation -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasImplementation">
+        <owl:inverseOf rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasScope -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasScope">
+        <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#Scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasTable -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasTable">
+        <rdfs:range rdf:resource="http://purl.org/spar/doco/Table"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#produced -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#produced">
+        <rdfs:range rdf:resource="http://purl.org/spar/deo/Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#publishedPaper -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#publishedPaper"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedDataset -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedDataset">
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery#DataFile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedMethod -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedMethod">
+        <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedSoftware -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedSoftware">
+        <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#SoftwareConfiguration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedVariable -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedVariable">
+        <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasEndRange -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasEndRange"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStartRange -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStartRange"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontosoft.org/software#Software -->
+
+    <owl:Class rdf:about="http://ontosoft.org/software#Software"/>
+    
+
+
+    <!-- http://purl.org/spar/deo/Methods -->
+
+    <owl:Class rdf:about="http://purl.org/spar/deo/Methods"/>
+    
+
+
+    <!-- http://purl.org/spar/deo/Results -->
+
+    <owl:Class rdf:about="http://purl.org/spar/deo/Results"/>
+    
+
+
+    <!-- http://purl.org/spar/doco/Figure -->
+
+    <owl:Class rdf:about="http://purl.org/spar/doco/Figure"/>
+    
+
+
+    <!-- http://purl.org/spar/doco/Table -->
+
+    <owl:Class rdf:about="http://purl.org/spar/doco/Table"/>
+    
+
+
+    <!-- http://rdf-vocabulary.ddialliance.org/discovery#DataFile -->
+
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#DataFile"/>
+    
+
+
+    <!-- http://rdf-vocabulary.ddialliance.org/discovery#Variable -->
+
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#Variable"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#AcceptedRange -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#AcceptedRange"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Application -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Application">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Experiment -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Experiment"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Objective"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Parameter"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Publication -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#ResearchQuestion -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#ResearchQuestion"/>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#Scope -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#Scope">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#SoftwareConfiguration -->
+
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#SoftwareConfiguration">
+        <rdfs:subClassOf rdf:resource="http://ontosoft.org/software#Software"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
