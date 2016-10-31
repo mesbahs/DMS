@@ -377,7 +377,9 @@
 
     <!-- http://rdf-vocabulary.ddialliance.org/discovery#Variable -->
 
-    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#Variable"/>
+    <owl:Class rdf:about="http://rdf-vocabulary.ddialliance.org/discovery#Variable">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+     </owl:Class>
     
 
 
