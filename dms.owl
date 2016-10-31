@@ -119,6 +119,11 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange"/>
     
+    
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement"/>
+    
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasApplication -->
