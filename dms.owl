@@ -103,8 +103,18 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment"/>
     
+    
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#createdDataset -->
 
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdDataset"/>
+    
+   
+   <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#createdVariable -->
 
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdVariable"/>
+    
+
+    
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange"/>
