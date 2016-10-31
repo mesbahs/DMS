@@ -97,7 +97,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith"/>
     
-
+     
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment -->
 
@@ -325,6 +325,10 @@
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType"/>
+    
+     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable"/>
     
 
 
