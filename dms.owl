@@ -184,14 +184,8 @@
         <rdfs:range rdf:resource="http://purl.org/spar/doco/Table"/>
     </owl:ObjectProperty>
     
-
-
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasUsage"/>
     
-
-
+    
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasVariable"/>
@@ -207,13 +201,7 @@
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf"/>
-    
-
-
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSatisfiedBy"/>
-    
+   
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf -->
@@ -331,9 +319,16 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType"/>
     
+     
      <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable"/>
+    
+   
+   <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth"/>
+    
     
 
 
