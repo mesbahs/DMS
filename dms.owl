@@ -14,7 +14,24 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl"/>
     
+ <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Ontology notes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+     <https://github.com/mesbahs/DMS/blob/master/dms.owl> a owl:Ontology;
+         dc:title
+             "Dataset, Method and Software ontology"@en;
+         rdfs:comment
+             "(Dataset, Method and Software) able to encode and describe (in a machine-readable way) properties of Datasets, Methods and Software all together."@en;
 
+         dc:creator
+             "Sepideh Mesbah",
+             "Alessandro Bozzon",
+             "Christoph Lofi",
+             "Geert-Jan Houben".
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
