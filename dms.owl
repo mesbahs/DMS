@@ -238,14 +238,7 @@
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#produced">
         <rdfs:range rdf:resource="http://purl.org/spar/deo/Results"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#publishedPaper -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#publishedPaper"/>
-    
-
+   
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective -->
 
