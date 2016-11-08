@@ -330,7 +330,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption">
      <rdfs:comment xml:lang="en"> A figure or table has a caption </rdfs:comment>
-    </owl:ObjectProperty>
+    </owl:DatatypeProperty>
     
     
 
@@ -351,7 +351,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType">
      <rdfs:comment xml:lang="en"> The produced results was based on a measurement type (e.g. precision) </rdfs:comment>
-    </owl:ObjectProperty>
+    </owl:DatatypeProperty>
     
     
      
@@ -359,7 +359,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable">
      <rdfs:comment xml:lang="en"> Some variable can be defined as dependent variables in the experiment </rdfs:comment>
-    </owl:ObjectProperty>
+    </owl:DatatypeProperty>
     
     
    
@@ -367,7 +367,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth">
      <rdfs:comment xml:lang="en"> The groundtruth data used in the experiment can be distinguished </rdfs:comment>
-    </owl:ObjectProperty>
+    </owl:DatatypeProperty>
     
     
     
