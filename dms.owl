@@ -12,12 +12,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
+    
     <owl:Ontology rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl">
-    <rdfs:comment>(Dataset, Method and Software ontology) able to encode and describe (in a machine-readable way) properties of Datasets, Methods and Software all together</rdfs:comment>
+    <dc:title xml:lang="en">Dataset, Method and Software ontology</dc:title>
+    <dc:description>(Dataset, Method and Software ontology) is able to encode and describe (in a machine-readable way) properties of Datasets, Methods and Software all together</dc:description>
     <dc:creator xml:lang="en">Sepideh Mesbah</dc:creator>
     <dc:creator xml:lang="en">Alessandro Bozzon</dc:creator>
     <dc:creator xml:lang="en">Christoph Lofi</dc:creator>
     <dc:creator xml:lang="en">Geert-Jan Houben</dc:creator>  
+    
     </owl:Ontology>
     
 
