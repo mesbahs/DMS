@@ -112,34 +112,46 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#comparedWith">
+     <rdfs:comment xml:lang="en">Used for comparing methods together, or sofware, etc.</rdfs:comment>
+    </owl:ObjectProperty>
     
      
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#describesExperiment">
+     <rdfs:comment xml:lang="en">A publication describes an experiment.</rdfs:comment>
+    </owl:ObjectProperty>
     
     
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#createdDataset -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdDataset"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdDataset">
+     <rdfs:comment xml:lang="en">A method or software created or enricht a dataset</rdfs:comment>
+    </owl:ObjectProperty>
     
    
    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#createdVariable -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdVariable"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#createdVariable">
+    <rdfs:comment xml:lang="en">A method or software created or variable</rdfs:comment>
+    </owl:ObjectProperty>
     
 
     
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasAcceptedRange">
+    <rdfs:comment xml:lang="en">The parameter of a method can have an acceptance range (e.g. from -1 to 1)</rdfs:comment>
+    </owl:ObjectProperty>
     
     
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasStatisticsMeasurement">
+    <rdfs:comment xml:lang="en">A dataset has some statistics measurements</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -147,6 +159,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasApplication">
         <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#Application"/>
+        <rdfs:comment xml:lang="en">A dataset, method or software has an application (e.g. predicting brand personality)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -155,6 +168,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasConfiguration">
         <owl:inverseOf rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#isConfigurationOf"/>
+            <rdfs:comment xml:lang="en">Each software can have different configurations used in different applications.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -163,6 +177,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasFigure">
         <rdfs:range rdf:resource="http://purl.org/spar/doco/Figure"/>
+         <rdfs:comment xml:lang="en">A publication can have figures.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -171,19 +186,26 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasImplementation">
         <owl:inverseOf rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#isImplementationOf"/>
+        <rdfs:comment xml:lang="en">Each method can have different implementations in different publications</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasObjective">
+     <rdfs:comment xml:lang="en">Each experiment has an objective</rdfs:comment>
+    </owl:ObjectProperty>
+    
     
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasParameter">
+     <rdfs:comment xml:lang="en">Each method can parameters.</rdfs:comment>
+    </owl:ObjectProperty>
+    
     
 
 
@@ -211,7 +233,10 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#implementedIn">
+     <rdfs:comment xml:lang="en">Each method can be inplemented in a software (e.g. random forest implemented in Scikit learn library)</rdfs:comment>
+    </owl:ObjectProperty>
+    
     
 
 
@@ -223,13 +248,17 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubGoalOf">
+     <rdfs:comment xml:lang="en">Each objective can be divided into sub objectives to reach the main goal</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isSubResearchQuestionOf">
+     <rdfs:comment xml:lang="en"> Each research question can have sub research questions</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -237,18 +266,23 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#produced">
         <rdfs:range rdf:resource="http://purl.org/spar/deo/Results"/>
+        <rdfs:comment xml:lang="en"> Each method or software produces a result</rdfs:comment>
     </owl:ObjectProperty>
    
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#referenceObjective">
+    <rdfs:comment xml:lang="en"> An application of a dataset, method or software can have a reference objective</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith">
+     <rdfs:comment xml:lang="en"> In an experiment, some methods or software are used jointly together for a given application </rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -286,7 +320,10 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion"/>
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasResearchQuestion">
+     <rdfs:comment xml:lang="en"> An experiment might have research questions</rdfs:comment>
+    </owl:ObjectProperty>
+    
     
 
 
@@ -309,7 +346,10 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#hasCaption">
+     <rdfs:comment xml:lang="en"> A figure or table has a caption </rdfs:comment>
+    </owl:ObjectProperty>
+    
     
 
 
@@ -327,17 +367,26 @@
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#measurementType">
+     <rdfs:comment xml:lang="en"> The produced results was based on a measurement type (e.g. precision) </rdfs:comment>
+    </owl:ObjectProperty>
+    
     
      
      <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isDependentVariable">
+     <rdfs:comment xml:lang="en"> Some variable can be defined as dependent variables in the experiment </rdfs:comment>
+    </owl:ObjectProperty>
+    
     
    
    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth"/>
+    <owl:DatatypeProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#isGroundTruth">
+     <rdfs:comment xml:lang="en"> The groundtruth data used in the experiment can be distinguished </rdfs:comment>
+    </owl:ObjectProperty>
+    
     
     
 
