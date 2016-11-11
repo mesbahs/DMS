@@ -269,10 +269,10 @@
     
 
 
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#relatedTo -->
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith -->
 
     <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#useJointlyWith">
-     <rdfs:comment xml:lang="en"> A figure or table is related to a Dataset, Method or software </rdfs:comment>
+     <rdfs:comment xml:lang="en"> A method can be used jointly with another method for a given purpose </rdfs:comment>
     </owl:ObjectProperty>
     
 
