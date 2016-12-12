@@ -419,13 +419,16 @@
      
      <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#corePipelineConcept -->
 
-    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#corePipelineConcept"/>
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#corePipelineConcept">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
         
      <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#extractionMethod -->
 
-    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#extractionMethod"/>
-    
+    <owl:Class rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#extractionMethod">
+     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </owl:Class>
 
 
     <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation -->
