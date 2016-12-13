@@ -202,9 +202,9 @@
     
 
 
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#produces -->
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#produced -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#produces">
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#produced">
         <rdfs:range rdf:resource="http://purl.org/spar/deo/Results"/>
         <rdfs:comment xml:lang="en"> Each method or software produces a result</rdfs:comment>
     </owl:ObjectProperty>
@@ -226,25 +226,25 @@
     
 
 
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usesDataset -->
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedDataset -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usesDataset">
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedDataset">
         <rdfs:range rdf:resource="http://rdf-vocabulary.ddialliance.org/discovery#DataFile"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usesMethod -->
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedMethod -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usesMethod">
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedMethod">
         <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#MethodImplementation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usesSoftware -->
+    <!-- https://github.com/mesbahs/DMS/blob/master/dms.owl#usedSoftware -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usesSoftware">
+    <owl:ObjectProperty rdf:about="https://github.com/mesbahs/DMS/blob/master/dms.owl#usedSoftware">
         <rdfs:range rdf:resource="https://github.com/mesbahs/DMS/blob/master/dms.owl#SoftwareConfiguration"/>
     </owl:ObjectProperty>
     
